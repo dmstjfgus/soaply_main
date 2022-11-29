@@ -10,8 +10,15 @@
     <link rel="shorcut icon" href="/images/favicon.png" />
     <link rel="apple-touch-icon" href="/images//favicon.png" />
 
+    <!-- Rimix Icon Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
     <!-- Main Style Sheet Link -->
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/media.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -28,27 +35,87 @@
           <div class="logo">
             <a href="#"><img src="/images/logo.svg" alt="logo" /></a>
           </div>
-          <ul class="sns">
-            <li>
-              <a href="#"
-                ><img src="images/sns-icon-1.svg" alt="sns-icon1"
-              /></a>
+
+          <ul class="info">
+            <li class="sns">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="images/sns-icon-1.svg" alt="sns-icon1"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="images/sns-icon-2.svg" alt="sns-icon2"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="images/sns-icon-3.svg" alt="sns-icon3"
+                  /></a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <a href="#"
-                ><img src="images/sns-icon-2.svg" alt="sns-icon2"
-              /></a>
+
+            <li class="cart">
+              <a href="#"><i class="ri-shopping-cart-line"></i><em>(0)</em></a>
             </li>
-            <li>
-              <a href="#"
-                ><img src="images/sns-icon-3.svg" alt="sns-icon3"
-              /></a>
+            <li class="user">
+              <button>
+                <i class="ri-user-3-fill"></i>
+              </button>
             </li>
           </ul>
+          <div class="mobile-btn-wrapper">
+            <div class="mobile-btn not-active">
+              <span class="bar_line"></span>
+              <span class="bar_line"></span>
+              <span class="bar_line"></span>
+            </div>
+          </div>
         </div>
+        <!-- Mobile Menu Elements -->
+        <div class="mobile-menus"></div>
       </header>
+
       <section id="main-section" class="section landing-section">
         <img src="/images/landing-image.jpeg" alt="landing-image" />
+        <div class="landing-text-box container">
+          <h1>소플리 컬렉션<br />자연을 담은 수제 천연 비누</h1>
+          <p>
+            건 명칭의 다른 마음가짐을 종주국으로 기능의 바꾸지 않다. 추가의 바
+            뿌옇은 국내는 저는 좋을까 생각하면
+          </p>
+          <a href="#" class="common-btn">Shop Now</a>
+        </div>
+        <div class="overlay"></div>
+      </section>
+
+      <!-- Meet Section -->
+      <section class="meet-section section">
+        <div class="container">
+          <div class="meet-wrapper">
+            <div class="meet-text-box">
+              <h4>MEET THE SOAPLY MASTER</h4>
+              <p>
+                무엇으로 되고 우리다 말 동물은 차이가 시장도 발생하다. 보고
+                당국의 자존을 거 어류가 깨끗하는지. 연결된 한, 있은 이를 나가,
+                것, 주다. 앞뒤다 인도교가, 제대로 가내적 진행한다 없으면 그 수
+                살거든. 재접근처럼 전개다 기술을 사퇴에서 풍수지리관을 등단하다.
+              </p>
+              <span>윤동주, '별 헤는 밤' 중...</span>
+            </div>
+            <div class="meet-image-box">
+              <div class="meet-left-image">
+                <img src="/images/about-image-1.jpeg" alt="" />
+                <img src="/images/about-image-3.jpeg" alt="" />
+              </div>
+              <div class="meet-right-image">
+                <img src="/images/about-image-2.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <!-- Scroll Reveal Plugin -->

@@ -1,0 +1,64 @@
+<div class="product-frame">
+              <div class="product-item">
+                <img src="/images/offers-image-1.jpeg" alt="" />
+                <div class="product-text">
+                  <h4>My Perfect bath Set</h4>
+                  <strong>&#8361;8.500</strong>
+                  <p>
+                    판지가 인사에서 아직 과즙을 난다. 아기는 등 이 사회나 된
+                    받다. 하고 세대는 것 등 적막을 물론이 이번이나 속한다.
+                  </p>
+                  <a href="#" class="common-btn">자세히 보기</a>
+                </div>
+                <!-- 상품 컨텐츠를 담는 박스 -->
+              </div>
+            </div>
+            <!-- 반복되는 상품 각각의 박스 -->
+            <div class="product-frame">
+              <div class="product-item">
+                <img src="/images/offers-image-2.jpeg" alt="" />
+                <div class="product-text">
+                  <h4>My Perfect bath Set</h4>
+                  <strong>&#8361;8.500</strong>
+                  <p>
+                    판지가 인사에서 아직 과즙을 난다. 아기는 등 이 사회나 된
+                    받다. 하고 세대는 것 등 적막을 물론이 이번이나 속한다.
+                  </p>
+                  <a href="#" class="common-btn">자세히 보기</a>
+                </div>
+                <!-- 상품 컨텐츠를 담는 박스 -->
+              </div>
+            </div>
+            <!-- 반복되는 상품 각각의 박스 -->
+            <div class="product-frame">
+              <div class="product-item">
+                <img src="/images/offers-image-3.jpeg" alt="" />
+                <div class="product-text">
+                  <h4>My Perfect bath Set</h4>
+                  <strong>&#8361;8.500</strong>
+                  <p>
+                    판지가 인사에서 아직 과즙을 난다. 아기는 등 이 사회나 된
+                    받다. 하고 세대는 것 등 적막을 물론이 이번이나 속한다.
+                  </p>
+                  <a href="#" class="common-btn">자세히 보기</a>
+                </div>
+                <!-- 상품 컨텐츠를 담는 박스 -->
+              </div>
+            </div>
+            <!-- 반복되는 상품 각각의 박스 -->
+            <div class="product-frame">
+              <div class="product-item">
+                <img src="/images/offers-image-3.jpeg" alt="" />
+                <div class="product-text">
+                  <h4>My Perfect bath Set</h4>
+                  <strong>&#8361;8.500</strong>
+                  <p>
+                    판지가 인사에서 아직 과즙을 난다. 아기는 등 이 사회나 된
+                    받다. 하고 세대는 것 등 적막을 물론이 이번이나 속한다.
+                  </p>
+                  <a href="#" class="common-btn">자세히 보기</a>
+                </div>
+                <!-- 상품 컨텐츠를 담는 박스 -->
+              </div>
+            </div>
+            <!-- 반복되는 상품 각각의 박스 -->

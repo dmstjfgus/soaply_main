@@ -36,7 +36,13 @@
 
     /********** Product Section style **********/
     .offers-section .product-frame {padding: var(--el-normal);}
+
+    /********** Review Section style **********/
+    .review-section .review-frame {padding: var(--el-normal);}
+    .review-section .review-item {padding: var(--el-medium);}
+    .review-section .review-frame p {-webkit-line-clamp: 2;}
 }
+
 @media screen and (max-width:786px) {
     html {font-size: 14px;}
     .section {padding: var(--el-section-small) 0;}
@@ -62,6 +68,9 @@
 
     /********** Product Section style **********/
     .offers-section .product-frame {width: var(--ls-1-2);}
+
+    /********** Review Section style **********/
+    .review-section .review-frame {width: var(--ls-1-2);}
 }
 
 @media screen and (max-width:600px) {
@@ -85,4 +94,10 @@
 
     /********** Product Section style **********/
     .offers-section .product-frame {width: var(--ls-full);}
+
+    /********** Review Section style **********/
+    .review-section .review-frame {width: var(--ls-full);}
+
+    /********** Gallery Section style **********/
+    .gallery-section .grid-item {width: var(--ls-1-2);  padding: .25rem;}
 }

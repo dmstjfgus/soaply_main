@@ -66,6 +66,16 @@ const getData = async () => {
 
 getData();
 
+/********** Fit Insta Effect  **********/
+const instaImageHeight = document.querySelector("#h").scrollHeight;
+// console.log(instaImageHeight);
+document.querySelector("#fh").style.height = instaImageHeight + "px";
+
+window.addEventListener("resize", () => {
+  const instaImageHeight = document.querySelector("#h").scrollHeight;
+  document.querySelector("#fh").style.height = instaImageHeight + "px";
+});
+
 /********** Scrollreveal Effect  **********/
 const sr = ScrollReveal({
   reset: false,

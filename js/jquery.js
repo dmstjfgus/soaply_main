@@ -22,7 +22,7 @@ $(function () {
       // console.log(item);
 
       const galleryItems = `
-        <div class="grid-item"><img src="/images/${item.datamain}" alt=""></div>
+        <div class="grid-item"><img src="/main_project/images/${item.datamain}" alt=""></div>
         `;
       items.push($(galleryItems).get(0));
 
@@ -39,7 +39,7 @@ $(function () {
     });
   };
 
-  $.getJSON("/data/gallery.json", getGalleryData);
+  $.getJSON("/main_project/data/gallery.json", getGalleryData);
 
   // Navigaion Moving to Target Section
   $(".nav-lists li").on("click", function () {

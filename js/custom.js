@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
 const productsBox = document.querySelector(".products");
 
 const getData = async () => {
-  await fetch("/main_project/data/products.json")
+  await fetch("/main_backend/model/get_Products.php")
     .then((response) => response.json())
     .then((data) => {
       let dataEl;

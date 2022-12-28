@@ -46,6 +46,12 @@
     /* Insta Section Style */
     .insta-section .insta-wrapper {column-gap: var(--el-samll);}
     .insta-section .insta-info h4 {font-size: var(--fs-name);}
+
+    /* Detail Page Style */
+    .details .detail-text h2 {font-size: 1.5rem;}
+    .details .price p {font-size: var(--fs-14);}
+    .details .detail-image img {max-height: 350px;}
+    .line {margin: var(--el-normal) 0;}
 }
 
 @media screen and (max-width:786px) {
@@ -126,10 +132,15 @@
     footer .footer-info .footer-nav a {padding: var(--el-small);}
     footer .footer-lower {flex-direction: column; row-gap: var(--el-normal); align-items: center; text-align: center;}
 
-        /* Sign Up Page Style */
-        .sign .sign-box {width: 95vw;}
-        .sign p input:not(input[type="submit"]) {padding: var(--el-normal);}
-        .sign p.send-btn input {padding: var(--el-normal);}
+    /* Sign Up Page Style */
+    .sign .sign-box {width: 95vw;}
+     .sign p input:not(input[type="submit"]) {padding: var(--el-normal);}
+    .sign p.send-btn input {padding: var(--el-normal);}
+
+    /* Detail Page Style */
+    .details .detail-wrapper .container {display: grid; grid-template-columns: repeat(1, 1fr);}
+    .details .detail-wrapper .container > div:nth-child(3){grid-column:unset;}
+    .details .detail-wrapper .container > div:nth-child(1) {width: 80%; margin: 0 auto var(--el-medium);}
 }
 
 @media screen and (max-width:400px){

@@ -8,7 +8,8 @@ window.addEventListener("load", function () {
       return res.json();
     })
     .then((data) => {
-      console.log(data.userid);
+      console.log(data);
+      console.log(data.useridx, data.userid);
       if (data.userid === "guest") {
         adminIcon.forEach((item) => {
           item.style.display = "none";

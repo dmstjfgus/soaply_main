@@ -2,7 +2,7 @@ const cmtInputBox = document.querySelector("textarea");
 const cmtBtn = document.querySelector("button[type=submit]");
 const url = document.location.href;
 const urlIndex = Number(url.split("=")[1]);
-console.log(urlIndex);
+// console.log(urlIndex);
 
 // 상품평 작성
 cmtBtn.addEventListener("click", () => {
@@ -113,7 +113,7 @@ getCmtLists();
 
 // 수정하기 기능 함수 선언
 function updateCmt(cmtObjs) {
-  console.log(cmtObjs);
+  // console.log(cmtObjs);
   const cmtUpBtns = document.querySelectorAll("button.cmt-update"); // 수정하기 버튼 그룹
   // console.log(cmtUpBtns);
 

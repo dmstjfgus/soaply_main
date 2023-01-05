@@ -34,6 +34,7 @@ window.addEventListener("load", function () {
         return response.json();
       })
       .then((data) => {
+        console.log(data);
         let imageEl;
         let textEl;
         imageEl = `
@@ -69,7 +70,7 @@ window.addEventListener("load", function () {
             <div class="sum">합계 : <em>${data.pro_pri
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</em>원</div>
-          </div>
+            </div>
 
           <span class="line"></span>
 
@@ -83,7 +84,7 @@ window.addEventListener("load", function () {
             <input type="hidden" name="cart_idx" value="${data.pro_idx}">
             <input type="hidden" name="cart_name" value="${data.pro_name}">
             <input type="hidden" name="cart_desc" value="${data.pro_desc}">
-            <input type="hidden" name="cart_price" value="${data.pro_price}">
+            <input type="hidden" name="cart_price" value="${data.pro_pri}">
             <input type="hidden" name="cart_img" value="${data.pro_img}">
             <input type="hidden" name="cart_count" value="1" class="cart-count">
             <input type="hidden" name="cart_sum" value="${data.pro_pri

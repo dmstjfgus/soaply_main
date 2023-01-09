@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
   const userIcon = document.querySelectorAll(".user");
   // console.log(userIcon); // 2개 배열  요소
   const adminIcon = document.querySelectorAll(".admin");
-  const cart = document.querySelector(".cart");
+  const cart = document.querySelectorAll(".cart");
 
   this.fetch("/main_backend/etc/check_sign.php")
     .then((res) => {
@@ -24,14 +24,15 @@ window.addEventListener("load", function () {
           <i class="ri-user-3-fill"></i>
         </a>`;
         });
-        cart.innerHTML = `
-          <a href="/main_project/pages/cart.html"><i class="ri-shopping-cart-line"></i><em>(${data.cart_count})</em></a>
-        `;
+        // cart.innerHTML = `
+        //   <a href="/main_project/pages/cart.html"><i class="ri-shopping-cart-line"></i><em>(${data.cart_count})</em></a>
+        // `;
         //   userIcon.innerHTML = `<a href="/main_project/pages/sign-in.html">
         //   <i class="ri-user-3-fill"></i>
         // </a>`;
-
-        cart.innerHTML = cartItemEl;
+        cart.forEach((item) => {
+          item.innerHTML = cartItemEl;
+        });
       } else {
         adminIcon.forEach((item) => {
           item.style.display = "flex";
@@ -41,12 +42,14 @@ window.addEventListener("load", function () {
           item.innerHTML = `<button class="signout">${data.userid} | <a href="#">Logout</a></button>`;
         });
 
-        cart.innerHTML = `
-          <a href="/main_project/pages/cart.html"><i class="ri-shopping-cart-line"></i><em>(${data.cart_count})</em></a>
-        `;
+        // cart.innerHTML = `
+        //   <a href="/main_project/pages/cart.html"><i class="ri-shopping-cart-line"></i><em>(${data.cart_count})</em></a>
+        // `;
         // userIcon.innerHTML = `<button class="signout">${data.userid} | <a href="#">Logout</a></button>`;
 
-        cart.innerHTML = cartItemEl;
+        cart.forEach((item) => {
+          item.innerHTML = cartItemEl;
+        });
       }
 
       const signoutBtn = document.querySelector(".signout a");

@@ -15,7 +15,7 @@ cmtBtn.addEventListener("click", () => {
 
   // 입력창 작성 체크 끝 : 위 부분이 완료 되면 다음 코드로 진행
   // FormData 참조 :https://ko.javascript.info/formdata
-  const formData = new FormData(document.querySelector(".comment-form form"));
+  const formData = new FormData(document.querySelector(".comment-form > form"));
   fetch(
     `/main_backend/model/cmt_ctrl.php?p_idx=${urlIndex}&req_sign=post_cmt`,
     {

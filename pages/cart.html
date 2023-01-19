@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1"
+    />
     <title>Cart Lists || Soaply</title>
 
     <!-- Favicon Link -->
@@ -25,10 +28,7 @@
   <body>
     <div class="wrapper cart-wrapper">
       <!-- Header include -->
-      <div
-        class="header-wrapper"
-        w3-include-html="/main_project/include/header.html"
-      ></div>
+      <div id="header-wrapper" class="header-wrapper" role="header"></div>
 
       <!-- Sign In Form Fileld Section -->
       <div class="cart-box">
@@ -37,53 +37,22 @@
             <h2>Cart Lists</h2>
           </div>
 
-          <div class="cart-lists-wrapper">
-            <!-- <p class="no-cart">카트에 상품이 없습니다.</p> -->
-            <!-- start of looping cart list -->
-
-            <!-- <div class="cart-list">
-              <div class="cart-frame">
-                <div class="cart-image">
-                  <img src="/main_project/images/offers-image-1.jpeg" alt="" />
-                </div>
-              </div>
-
-              <div class="cart-text">
-                <h2 class="item-title">제품 1</h2>
-                <p>
-                  그러나 버릴 사건에 않은 정도다 경우는 묻어요. 곳을 하여야
-                  버리면 자기는, 주어지다. 때문 확정되고 아무리 때문 지금
-                  공항에서 미술을
-                </p>
-              </div>
-              <div class="cart-price">
-                <div class="qnts">
-                  <button class="down">-</button>
-                  <strong class="count">1</strong>
-                  <button class="up">+</button>
-                </div>
-                <div class="sum">합계 : <em>30000</em>원</div>
-              </div>
-              <div class="cart-btns">
-                <div class="common-btn">상품삭제</div>
-                <div class="common-btn">바로구매</div>
-              </div>
-            </div> -->
-
-            <!-- end of looping cart list -->
-          </div>
+          <div class="cart-lists-wrapper"></div>
         </div>
       </div>
 
       <!-- Footer include -->
-      <div
-        class="footer-wrapper"
-        w3-include-html="/main_project/include/footer.html"
-      ></div>
+      <div id="footer" class="footer-wrapper" role="footer"></div>
     </div>
 
+    <!-- jQuery Frmework -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Include Files -->
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="/main_project/js/interface/include.js"></script>
 
     <!-- Main Javascript -->

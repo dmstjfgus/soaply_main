@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1"
+    />
     <title>Soaply</title>
 
     <!-- Favicon Link -->
@@ -31,10 +34,7 @@
   <body>
     <div class="wrapper">
       <!-- Header include -->
-      <div
-        class="header-wrapper"
-        w3-include-html="/main_project/include/header.html"
-      ></div>
+      <div id="header-wrapper" class="header-wrapper" role="header"></div>
 
       <section id="main-section" class="section landing-section nav-target">
         <img
@@ -266,7 +266,7 @@
       <section class="gallery-section section nav-target">
         <div class="container">
           <div class="title-box">
-            <h2 class="section-title">The Gallery From Clents</h2>
+            <h2 class="section-title">The Gallery</h2>
             <a href="/main_project/pages/gallery.html" class="common-btn"
               >전체보기</a
             >
@@ -322,15 +322,7 @@
       </section>
 
       <!-- Footer include -->
-      <div
-        class="footer-wrapper"
-        w3-include-html="/main_project/include/footer.html"
-      ></div>
-    </div>
-
-    <!-- Include Files -->
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script src="/main_project/js/interface/include.js"></script>
+      <div id="footer" class="footer-wrapper" role="footer"></div>
 
     <!-- Scroll Reveal Plugin -->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -343,6 +335,9 @@
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
+
+    <!-- Include Files -->
+    <script src="/main_project/js/interface/include.js"></script>
 
     <!-- masonry and imagesLoad -->
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>

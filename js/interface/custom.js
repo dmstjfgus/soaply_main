@@ -25,15 +25,12 @@ window.addEventListener("load", function () {
     origin: "bottom",
     distance: "40px",
   });
-  sr.reveal(
-    ".meet-wrapper img, .feature, .product-frame, .review-frame, .grid-item",
-    {
-      dureation: 1000,
-      origin: "bottom",
-      distance: "40px",
-      interval: 300,
-    }
-  );
+  sr.reveal(".meet-wrapper img, .feature, .product-frame, .review-frame", {
+    dureation: 1000,
+    origin: "bottom",
+    distance: "40px",
+    interval: 300,
+  });
 });
 
 /********** Swiper Slider Effect  **********/

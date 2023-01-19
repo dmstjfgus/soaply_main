@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1"
+    />
     <title>Sign In || Soaply</title>
 
     <!-- Favicon Link -->
@@ -25,10 +28,7 @@
   <body>
     <div class="wrapper sign">
       <!-- Header include -->
-      <div
-        class="header-wrapper"
-        w3-include-html="/main_project/include/header.html"
-      ></div>
+      <div id="header-wrapper" class="header-wrapper" role="header"></div>
 
       <!-- Sign In Form Fileld Section -->
       <div class="sign-box">
@@ -52,14 +52,17 @@
       </div>
 
       <!-- Footer include -->
-      <div
-        class="footer-wrapper"
-        w3-include-html="/main_project/include/footer.html"
-      ></div>
+      <div id="footer" class="footer-wrapper" role="footer"></div>
     </div>
 
+    <!-- jQuery Frmework -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Include Files -->
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="/main_project/js/interface/include.js"></script>
 
     <!-- Main Javascript -->

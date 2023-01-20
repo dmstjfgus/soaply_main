@@ -5,10 +5,8 @@ window.addEventListener("load", function () {
     await this.fetch("/main_backend/model/user_ctrl.php?req_sign=get_user")
       .then((Response) => Response.json())
       .then((user) => {
-        // console.log(user);
         let userListsEl;
         user.map((item, i) => {
-          // console.log(item);
           userListsEl = `
           <li>
             <form onsubmit="return false;" class="update-form-${i}">
@@ -39,13 +37,10 @@ window.addEventListener("load", function () {
 
   function updateUser(data) {
     // update user 함수 선언
-    // console.log(data);
     const updtBtns = document.querySelectorAll(".updt button");
-    // console.log(upBtns);
 
     updtBtns.forEach((btn, i) => {
       btn.addEventListener("click", async function () {
-        // console.log(data[i]);
         const formData = new FormData(
           document.querySelector(`.update-form-${i}`)
         );
@@ -72,13 +67,11 @@ window.addEventListener("load", function () {
 
     delBtns.forEach((btn, i) => {
       btn.addEventListener("click", async function () {
-        // console.log(data[i].user_index);
         await fetch(
           `/main_backend/model/user_ctrl.php?req_sign=del_user&user_idx=${data[i].user_idx}`
         )
           .then((Response) => Response.json())
           .then((del) => {
-            // console.log(del);
             alert(del.msg);
             location.reload();
           })

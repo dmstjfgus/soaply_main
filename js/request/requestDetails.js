@@ -1,6 +1,5 @@
 window.addEventListener("load", function () {
   const url = document.location.href;
-  // console.log(url);
   // split 메서드 참조  :  https://hianna.tistory.com/377
   const urlIndex = Number(url.split("=")[1]);
   // console.log(typeof urlIndex);
@@ -22,7 +21,6 @@ window.addEventListener("load", function () {
         .then((cart) => {
           this.alert(cart.msg);
           this.location.reload();
-          // console.log(cart);
         })
         .catch((err) => console.log(err));
     });
@@ -34,7 +32,6 @@ window.addEventListener("load", function () {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         let imageEl;
         let textEl;
         imageEl = `
@@ -108,9 +105,6 @@ window.addEventListener("load", function () {
         let count = Number(countEl.textContent); // 카운팅 숫자
         let sumPrice = Number(sumEl.textContent.replace(",", "")); // 합산 가격
 
-        // console.log(count);
-        // console.log(sumPrice);
-
         countBtn.forEach((btn) => {
           btn.addEventListener("click", function () {
             if (this.classList.contains("up")) {
@@ -118,21 +112,11 @@ window.addEventListener("load", function () {
             } else {
               // 삼항 연산자 : 조건 ? 조건이 참일 때 : 조선이 거질일때
               count <= 1 ? (count = 1) : count--;
-              // if (count <= 1) {
-              //   count = 1;
-              // } else {
-              //   count--;
-              // }
             }
-            // console.log(count);
             countEl.textContent = cartCountEl.value = count;
-            // cartCountEl.value = count;
             sumEl.textContent = cartSumEl.value = (count * sumPrice)
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            // cartSumEl.value = (count * sumPrice)
-            //  .toString()
-            //  .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
           });
         });
         requestCart(); // 3.

@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
     reset: false,
   });
 
-  sr.reveal(".wrapper", { dureation: 1000 });
+  // sr.reveal(".wrapper", { dureation: 1000 });
   sr.reveal(".landing-text-box", {
     dureation: 1000,
     origin: "right",

@@ -1,8 +1,3 @@
-// $(document).ready(function () {
-//   // do something...
-//   // not recommended...
-// });
-
 $(function () {
   // Navigaion Moving to Target Section
   $(document).ajaxComplete(function () {
@@ -11,7 +6,7 @@ $(function () {
       e.preventDefault(); // a에 적용된 기본 기능 제거(클릭이벤트)
       const targetIdx = $(this).index();
       const pagePosition = $(".nav-target").eq(targetIdx).offset().top;
-      $("html, body").animate({ scrollTop: pagePosition - 50 }, 100);
+      $("html, body").animate({ scrollTop: pagePosition - 30 }, 100);
     });
   });
-}); //recommended...
+});

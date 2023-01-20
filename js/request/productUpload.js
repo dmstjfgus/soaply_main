@@ -15,7 +15,6 @@ submitBtn.addEventListener("click", () => {
       }
     })
     .then((data) => {
-      console.log(data);
       alert(data.msg);
       location.reload();
     })
